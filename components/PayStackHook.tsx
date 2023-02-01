@@ -28,17 +28,8 @@ interface Ref {
 
 // you can call this function anything
 
-const onSuccess =  ( reference : any | Ref ) => {
-  console.log(reference)
-
-  
-  try{
-    const data = AxiosClient.post("/api", reference);
-    console.log(data)
-  }
-  catch(error){
-    console.error(error)
-  }
+const onSuccess =  ( ) => {
+  console.log("reference")
 
 }
 
